@@ -4,9 +4,9 @@
   const app = express();
 
   // Serve only the static files form the dist directory
-  app.use(express.static(__dirname + '/dist/grocery-app'));
+  app.use(express.static(__dirname + '/dist/grocerywebapp'));
   app.get('/*', function(req,res) {
-     res.sendFile(path.join(__dirname+'/dist/grocery-app/index.html'));
+     res.sendFile(path.join(__dirname+'/dist/grocerywebapp/index.html'));
   });
 
   // Start the app by listening on the default Heroku port
